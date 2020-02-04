@@ -14,7 +14,12 @@ trigger:
 
 resources:
 - repo: self
-
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
 variables:
   tag: '$(Build.BuildId)'
 
